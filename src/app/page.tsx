@@ -1,4 +1,5 @@
-import React from "react";
+"use client"
+import React, { useState } from "react";
 import Sidebar from "@/components/dashboard/Sidebar";
 import Header from "@/components/dashboard/Header";
 import MetricsCards from "@/components/dashboard/MetricsCards";
@@ -8,7 +9,7 @@ import ClientActivity from "@/components/dashboard/ClientActivity";
 import SalesChart from "@/components/dashboard/SalesChart";
 
 export default function Home() {
-  const [isSidebarOpen, setIsSidebarOpen] = React.useState(false);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
